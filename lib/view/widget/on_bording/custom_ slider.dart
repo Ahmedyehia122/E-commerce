@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 import 'package:e_commerce_app/controller/on_bording_controller.dart';
-import 'package:e_commerce_app/core/constant/color.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
