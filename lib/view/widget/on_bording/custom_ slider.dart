@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 import 'package:e_commerce_app/controller/on_bording_controller.dart';
 import 'package:e_commerce_app/core/constant/color.dart';
 import 'package:flutter/material.dart';
@@ -30,10 +31,7 @@ class CustomSliderOnBording extends GetView<OnBordingControllerImp> {
                 ),
                 child: Text(
                   '${onBordingList[i].title}',
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                  ),
+                  style: Theme.of(context).textTheme.headline1,
                 ),
               ),
               const SizedBox(
@@ -50,16 +48,9 @@ class CustomSliderOnBording extends GetView<OnBordingControllerImp> {
               Container(
                 width: double.infinity,
                 alignment: Alignment.center,
-                child: Text(
-                  '${onBordingList[i].body}',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    height: 2,
-                    color: AppColor.grey,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                child: Text('${onBordingList[i].body}',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyText1),
               ),
             ],
           ),
